@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="b84c8c34d03f450c8279e93b5d7eaea1" Name="Diagram1" ZoomLevel="52">
+        <EntityTypeShape EntityType="PersonalHealthAssistantModel.Appointment" Width="1.5" PointX="10.5" PointY="2.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="PersonalHealthAssistantModel.Contact" Width="1.5" PointX="5.25" PointY="1.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="PersonalHealthAssistantModel.Doctor" Width="1.5" PointX="7.5" PointY="1.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="PersonalHealthAssistantModel.Feedback" Width="1.5" PointX="5" PointY="6.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="PersonalHealthAssistantModel.Health_Vital" Width="1.5" PointX="6.875" PointY="6.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="PersonalHealthAssistantModel.Medicine_Dosage" Width="1.5" PointX="1" PointY="8.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="PersonalHealthAssistantModel.Patient" Width="1.5" PointX="3.5" PointY="9.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="PersonalHealthAssistantModel.Role" Width="1.5" PointX="1" PointY="6.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="PersonalHealthAssistantModel.User" Width="1.5" PointX="3" PointY="5" IsExpanded="true" />
+        <AssociationConnector Association="PersonalHealthAssistantModel.FK__Appointme__Doc_I__4222D4EF" ManuallyRouted="false" />
+        <AssociationConnector Association="PersonalHealthAssistantModel.FK__Appointme__Patie__412EB0B6" ManuallyRouted="false" />
+        <AssociationConnector Association="PersonalHealthAssistantModel.FK__Contacts__User_I__4D94879B" ManuallyRouted="false" />
+        <AssociationConnector Association="PersonalHealthAssistantModel.FK__Doctors__User_Id__3B75D760" ManuallyRouted="false" />
+        <AssociationConnector Association="PersonalHealthAssistantModel.FK__Feedbacks__User___4AB81AF0" ManuallyRouted="false" />
+        <AssociationConnector Association="PersonalHealthAssistantModel.FK__Health_Vi__User___47DBAE45" ManuallyRouted="false" />
+        <AssociationConnector Association="PersonalHealthAssistantModel.FK__Medicine___User___44FF419A" ManuallyRouted="false" />
+        <AssociationConnector Association="PersonalHealthAssistantModel.FK__Patients__User_I__3E52440B" ManuallyRouted="false" />
+        <AssociationConnector Association="PersonalHealthAssistantModel.FK__Users__Role_Id__38996AB5" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

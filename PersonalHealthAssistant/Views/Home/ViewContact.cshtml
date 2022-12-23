@@ -1,0 +1,33 @@
+﻿@model IEnumerable<PersonalHealthAssistant.Models.Contact>
+
+
+
+<br />
+<br />
+<a href="@Url.Action("ViewContact","Home")" class="btn btn-primary">NEW MESSAGES</a>
+
+<h2>View Contact</h2>
+
+<table class="table table-hover">
+
+    <tr>
+
+        <th>ID</th>
+        <th>Email</th>
+        <th>Message</th>
+
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.Contact_Id</td>
+            <td>@item.Email</td>
+            <td>@item.Message</td>
+
+
+
+        </tr>
+    }
+
+</table>

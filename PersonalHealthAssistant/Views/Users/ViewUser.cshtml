@@ -1,0 +1,35 @@
+﻿@model IEnumerable<PersonalHealthAssistant.Models.User>
+
+<br />
+<br />
+<a href="@Url.Action("AddUser","Users")" class="btn btn-success">Add New User</a>
+
+<h2>View Users</h2>
+
+<table class="table table-hover">
+
+    <tr>
+        <th>UserId</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Password</th>
+        <th>Action</th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.User_Id</td>
+            <td>@item.full_name</td>
+            <td>@item.email</td>
+            <td>@item.password</td>
+
+            <td>
+                <a href="@Url.Action("Edit", "Users", new { id = @item.User_Id })" class="btn btn-info">Edit</a>
+                <a href="@Url.Action("Delete", "Users", new { id = @item.User_Id })" class="btn btn-danger">Delete</a>
+            </td>
+
+        </tr>
+    }
+
+</table>

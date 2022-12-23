@@ -1,0 +1,39 @@
+﻿@{
+    Layout = "~/Views/Shared/_FrontTheme.cshtml";
+}
+
+
+
+@model PersonalHealthAssistant.Models.Contact
+
+
+<div id="contact">
+    <div class="contact" id="contact">
+        <h3 class="center">Contact Us</h3>
+        <div class="container">
+            <div class="contact-me">
+                <p>lorem ipsum Praesent in rutrum turpis. Sed aliquet ligula at nunc feugiat, ut porta arcu fermentum. Aliquam et libero at quam tristique consectetur ut non lectus.</p>
+
+                @using (Html.BeginForm())
+                {
+                    <ul class="input">
+                       
+                        <li>
+                            <span class="fa fa-envelope-o" aria-hidden="true"></span>
+                            <input type="email" name="email" placeholder="Your E-mail" required="">
+                        </li>
+                        <li>
+                            <span class="fa fa-comments-o" aria-hidden="true"></span>
+                            <textarea cols="20" rows="5" name="message" placeholder="Your Message" required=""></textarea>
+                        </li>
+
+                    </ul>
+                    <input type="submit" value="send message">
+                }
+
+
+            </div>
+        </div>
+        <h1>@TempData["msg"]</h1>
+    </div>
+</div>

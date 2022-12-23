@@ -1,0 +1,27 @@
+﻿
+
+
+<h2>Register</h2>
+
+@model PersonalHealthAssistant.Models.Role
+
+
+<h2>Register</h2>
+
+@using (Html.BeginForm())
+{
+    <div class="row">
+        <div class="col-lg-6">
+            <div class="form-group">
+                <label>Name: </label>
+                @Html.EditorFor(m => m.role_name)
+            </div>
+
+
+            <input type="submit" value="Register" class="btn btn-primary" />
+            <h1>@TempData["msg"]</h1>
+        </div>
+    </div>
+
+
+}

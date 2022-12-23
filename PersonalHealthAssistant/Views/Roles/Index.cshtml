@@ -1,0 +1,33 @@
+﻿@model IEnumerable<PersonalHealthAssistant.Models.Role>
+@{
+    ViewBag.Title = "Index";
+}
+
+<br />
+<a href="@Url.Action("Register","Roles")" class="btn btn-success">Add New Roles</a>
+
+<h2>View Users</h2>
+
+<table class="table table-hover">
+
+    <tr>
+        <th>Role Id</th>
+        <th>Name</th>
+        <th>Action</th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.Role_Id</td>
+            <td>@item.role_name</td>
+
+            <td>
+                <a href="@Url.Action("Edit", "Roles", new { id = @item.Role_Id })" class="btn btn-info">Edit</a>
+                <a href="@Url.Action("Delete", "Roles", new { id = @item.Role_Id })" class="btn btn-danger">Delete</a>
+            </td>
+
+        </tr>
+    }
+
+</table>

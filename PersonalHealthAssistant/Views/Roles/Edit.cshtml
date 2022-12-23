@@ -1,0 +1,26 @@
+﻿@model PersonalHealthAssistant.Models.Role
+@{
+    ViewBag.Title = "Register";
+}
+
+<h2>Update Role</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.HiddenFor(m => m.role_id)
+
+    <div class="row">
+        <div class="col-lg-6">
+            <div class="form-group">
+                <label>Name: </label>
+                @Html.EditorFor(m => m.role_name)
+            </div>
+
+
+            <input type="submit" value="Update" class="btn btn-primary" />
+            <h1>@TempData["msg"]</h1>
+        </div>
+    </div>
+
+
+}

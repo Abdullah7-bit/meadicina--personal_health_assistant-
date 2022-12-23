@@ -1,0 +1,176 @@
+﻿@model IEnumerable<PersonalHealthAssistant.Models.Doctor>
+
+
+@{
+    Layout = "~/Views/Shared/_FrontTheme.cshtml";
+}
+
+
+@*about start*@
+<div class="about" id="about">
+    <h3 class="center"> About us </h3>
+    <div class="container">
+        <div class="d-flex">
+            <div class="about1">
+
+                <p class="details">
+                    Nullam pulvinar vulputate aliquam. Pellentesque venenatis ut mi ac porta. Praesent interdum nibh libero, id malesuada libero aliquet quis. Donec at odio nibh
+
+                    malesuada libero aliquet quis. Donec at odio nibh.
+                </p>
+
+            </div>
+            <div class="about2">
+
+            </div>
+        </div>
+    </div>
+</div>
+
+@*about end*@
+
+
+
+@*our doctor start*@
+<div class="container-fluid doctor" id="doctor">
+    <h3 class="center">Our Doctors</h3>
+
+    <div class="row" style="padding-bottom:5px; padding-top:10px;">
+        @foreach (var item in Model)
+        {
+            <div class="col-lg-4">
+                <div class="card">
+
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <img src="~/FrontTheme/images/@item.Image" class="card-img-top img-circle" style="height:100px; width:100%; margin-top:10px;" alt="...">
+                        </div>
+                        <div class="col-sm-6" style="margin-bottom:5px;">
+                            <p class="card-text"> Phone: @item.Phone_number </p>
+                            <p class="card-text"> Days & Timing: <br /> <span class="badge bg-secondary"> @item.Available_days </span> <span class="badge bg-primary"> @item.Available_time </span></p>
+                            <p class="card-text"> Location: @item.City </p>
+                            <p class="card-text"> Fee: Rs.@item.Fees </p>
+                        </div>
+                        <a href="#" class="btn btn-primary">Book Appointment</a>
+
+                    </div>
+
+                </div>
+            </div>
+        }
+
+    </div>
+</div>
+@*doctor end*@
+
+
+
+@*services start*@
+<div class="service" id="service">
+    <h3 class="center">Our Services</h3>
+    <div class="container">
+        <h4>The best service provider for paitent</h4>
+        <br />
+        <div class="service-list">
+            <div class="service1">
+                <img src="~/FrontTheme/images/first-aid-kit.png" style="height:50px;" />
+                <h5>Personal Health Tracking</h5>
+                <p>Health, according to the World Health Organization, is "a state of complete physical, mental and social well-being and not merely the absence of disease and infirmity".</p>
+            </div>
+
+            <div class="service2">
+                <img src="~/FrontTheme/images/package.png" style="height:50px;" />
+                <h5>Medicine</h5>
+                <p>Medicine is the science[1] and practice[2] of caring for a patient, managing the diagnosis, prognosis, prevention, treatment, palliation of their injury or disease, and promoting their health.</p>
+            </div>
+            <div class="service3">
+                <img src="~/FrontTheme/images/calendar.png" style="height:50px;" />
+                <h5>Appointment</h5>
+                <p>The healthcare delivery system of Pakistan is complex because it includes healthcare subsystems by feder and provincial governments  informal private sector healthcare systems.</p>
+            </div>
+        </div>
+    </div>
+</div>
+@*services end*@
+
+
+@*reviews strat*@
+<div class="w3ls-testimons" id="testimon">
+    <h3 class="center">Our Reviews</h3>
+    <div class="container">
+        <div class="flexslider-info">
+            <section class="slider">
+                <div class="flexslider">
+
+                    <div class="flex-viewport" style="overflow: hidden; position: relative;">
+                        <ul class="slides" style="width: 1000%; transition-duration: 0.6s; transform: translate3d(-3420px, 0px, 0px);">
+                            <li class="clone" style="width: 1140px; float: left; display: block;">
+                                <div class="user-review">
+                                    <div class="usr-txt">
+                                        <h6 class="review">There are many variations of passages of Lorem Ipsum available, by injected humour, or randomised words.</h6>
+                                        <p class="indent">but the majority have suffered alteration in some form, but the majority have suffered alteration in some form</p>
+                                        <p class="usr-name">Ambreen</p>
+                                    </div>
+                                    <div class="usr-img">
+                                        <img src="~/FrontTheme/images/g1.jpg" alt="Customer1" class="img-responsive">
+                                    </div>
+                                </div>
+                            </li>
+                            <li style="width: 1140px; float: left; display: block;" class="">
+                                <div class="user-review">
+                                    <div class="usr-txt">
+                                        <h6 class="review">There are many variations of passages of Lorem Ipsum available, by injected humour, or randomised words.</h6>
+                                        <p class="indent">but the majority have suffered alteration in some form, but the majority have suffered alteration in some form</p>
+                                        <p class="usr-name">Michel Blobs, <span class="designation">Fashion Designer</span></p>
+                                    </div>
+                                    <div class="usr-img">
+                                        <img src="~/FrontTheme/images/g2.jpg" alt="Customer1" class="img-responsive">
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="" style="width: 1140px; float: left; display: block;">
+                                <div class="user-review">
+                                    <div class="usr-txt">
+                                        <h6 class="review">There are many variations of passages of Lorem Ipsum available, by injected humour, or randomised words.</h6>
+                                        <p class="indent">but the majority have suffered alteration in some form, but the majority have suffered alteration in some form</p>
+                                        <p class="usr-name">Zeeshan</p>
+                                    </div>
+                                    <div class="usr-img">
+                                        <img src="~/FrontTheme/images/g3.jpg" alt="Customer1" class="img-responsive">
+                                    </div>
+                                </div>
+
+                            </li>
+                            <li class="flex-active-slide" style="width: 1140px; float: left; display: block;">
+                                <div class="user-review">
+                                    <div class="usr-txt">
+                                        <h6 class="review">There are many variations of passages of Lorem Ipsum available, by injected humour, or randomised words.</h6>
+                                        <p class="indent">but the majority have suffered alteration in some form, but the majority have suffered alteration in some form</p>
+                                        <p class="usr-name">Osama</p>
+                                    </div>
+                                    <div class="usr-img">
+                                        <img src="/FrontTheme/images/u3.jpg" alt="Customer1" class="img-responsive">
+                                    </div>
+                                </div>
+                            </li>
+                            <li style="width: 1140px; float: left; display: block;" class="clone">
+                                <div class="user-review">
+                                    <div class="usr-txt">
+                                        <h6 class="review">There are many variations of passages of Lorem Ipsum available, by injected humour, or randomised words.</h6>
+                                        <p class="indent">but the majority have suffered alteration in some form, but the majority have suffered alteration in some form</p>
+                                        <p class="usr-name">  </p>
+                                    </div>
+                                    <div class="usr-img">
+                                        <img src="/FrontTheme/images/u1.jpg" alt="Customer1" class="img-responsive">
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div><ol class="flex-control-nav flex-control-paging"><li><a class="">1</a></li><li><a class="">2</a></li><li><a class="flex-active">3</a></li></ol><ul class="flex-direction-nav"><li><a class="flex-prev" href="#">Previous</a></li><li><a class="flex-next" href="#">Next</a></li></ul>
+                </div><div class="clearfix"> </div>
+            </section>
+        </div><div class="clearfix"> </div>
+    </div>
+</div>
+
+@*reviews end*@
